@@ -221,7 +221,7 @@
             .form__element {
               display: flex;
               flex-direction: column;
-              &.error {
+              &.supply__form__error {
                 position: relative;
                 .form__element__input {
                   border-color: #c3094f;

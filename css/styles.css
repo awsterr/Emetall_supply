@@ -9931,14 +9931,14 @@ body:has(.modal-body.opened) {
   display: flex;
   flex-direction: column;
 }
-.supply__footer__container .supply__footer__content .supply__footer__card.form .form__element.error {
+.supply__footer__container .supply__footer__content .supply__footer__card.form .form__element.supply__form__error {
   position: relative;
 }
-.supply__footer__container .supply__footer__content .supply__footer__card.form .form__element.error .form__element__input {
+.supply__footer__container .supply__footer__content .supply__footer__card.form .form__element.supply__form__error .form__element__input {
   border-color: #c3094f;
   background-color: rgba(195, 9, 79, 0.0509803922);
 }
-.supply__footer__container .supply__footer__content .supply__footer__card.form .form__element.error .form__element__error {
+.supply__footer__container .supply__footer__content .supply__footer__card.form .form__element.supply__form__error .form__element__error {
   font-size: 12px;
   line-height: 16px;
   color: #c3094f;

@@ -9622,28 +9622,27 @@
       }
 
       emailInput.addEventListener("input", () => {
-        emailParent.classList.remove("error");
+        emailParent.classList.remove("supply__form__error");
       });
       phoneInput.addEventListener("input", () => {
-        phoneParent.classList.remove("error");
+        phoneParent.classList.remove("supply__form__error");
       });
 
       form.addEventListener("submit", function (e) {
         let valid = true;
 
         if (!validateEmail(emailInput.value)) {
-          emailParent.classList.add("error");
+          emailParent.classList.add("supply__form__error");
           valid = false;
         } else {
-          emailParent.classList.remove("error");
+          emailParent.classList.remove("supply__form__error");
         }
 
         if (!validatePhone(phoneInput.value)) {
-          phoneParent.classList.add("error");
+          phoneParent.classList.add("supply__form__error");
           valid = false;
-          return;
         } else {
-          phoneParent.classList.remove("error");
+          phoneParent.classList.remove("supply__form__error");
         }
 
         if (!valid) {

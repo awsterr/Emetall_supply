@@ -9886,7 +9886,7 @@ body:has(.modal-body.opened) {
 }
 .supply__footer__container .supply__footer__content .supply__footer__card.advantages {
   background: linear-gradient(357.81deg, #212529 22.71%, #73818f 169.62%);
-  padding: 57px 60px 48px;
+  padding: 58px 60px 58px 48px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -10267,6 +10267,9 @@ body:has(.modal-body.opened) {
     font-size: 14px;
     line-height: 20px;
     gap: 13px;
+  }
+  .supply__footer .supply__footer__container .supply__footer__content .supply__footer__card.advantages .advantages__list .advantages__list__item {
+    text-wrap: nowrap;
   }
   .supply__footer .supply__footer__container .supply__footer__content .supply__footer__card.advantages .advantages__list .advantages__list__item::before {
     min-width: 20px;

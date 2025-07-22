@@ -177,7 +177,7 @@
               #212529 22.71%,
               #73818f 169.62%
             );
-            padding: 57px 60px 48px;
+            padding: 58px 60px 58px 48px;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
@@ -589,6 +589,7 @@
                 line-height: 20px;
                 gap: 13px;
                 .advantages__list__item {
+                  text-wrap: nowrap;
                   &::before {
                     min-width: 20px;
                     height: 20px;

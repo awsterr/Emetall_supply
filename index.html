@@ -205,7 +205,7 @@
                   <li class="advantages__list__item">Организуем доставку</li>
                 </ul>
                 <img
-                  src="img/supply/card_img.png"
+                  src="img/supply/card_img.svg"
                   alt="image"
                   class="advantages__image"
                 />
@@ -395,7 +395,6 @@
         </div>
       </section>
     </main>
-    <!-- Модальное окно успешной отправки -->
     <div class="modal-success" id="modal-success">
       <div class="modal-success__content">
         <span class="modal-success__close" id="modal-success-close"
@@ -472,6 +471,10 @@
         }
 
         e.preventDefault();
+        var modalPhone = document.querySelector(".modal-success__phone");
+        if (modalPhone) {
+          modalPhone.textContent = phoneInput.value;
+        }
         document.getElementById("modal-success").classList.add("active");
         form.reset();
 

@@ -163,6 +163,7 @@
             line-height: 32px;
             font-weight: 400;
             padding: 60px 48px 70px;
+            gap: 16px;
             .email__link {
               color: #2764e0;
               text-decoration: underline;
@@ -284,7 +285,7 @@
                 font-size: 15px;
                 line-height: 25px;
                 font-weight: 600;
-                width: 100%;
+                width: 50%;
                 height: 44px;
                 display: flex;
                 align-items: center;
@@ -317,7 +318,10 @@
                     display: block;
                   }
                   .form__file-btn__text {
-                    max-width: calc(100% - 60px);
+                    max-width: 60%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                   }
                 }
                 .form__file-btn__icon-file-success,
@@ -461,6 +465,11 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #2764e0;
+      border-color: #2764e0;
+    }
   }
 }
 
@@ -613,6 +622,9 @@
               .form__buttons {
                 flex-direction: column;
                 gap: 16px;
+                .form__file-btn {
+                  width: 100%;
+                }
               }
               .form__agreement {
                 font-size: 12px;

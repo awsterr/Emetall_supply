@@ -9876,6 +9876,7 @@ body:has(.modal-body.opened) {
   line-height: 32px;
   font-weight: 400;
   padding: 60px 48px 70px;
+  gap: 16px;
 }
 .supply__footer__container .supply__footer__content .supply__footer__card.email .email__link {
   color: #2764e0;
@@ -9995,7 +9996,7 @@ body:has(.modal-body.opened) {
   font-size: 15px;
   line-height: 25px;
   font-weight: 600;
-  width: 100%;
+  width: 50%;
   height: 44px;
   display: flex;
   align-items: center;
@@ -10030,7 +10031,10 @@ body:has(.modal-body.opened) {
   display: block;
 }
 .supply__footer__container .supply__footer__content .supply__footer__card.form .form__buttons .form__file-btn.active .form__file-btn__text {
-  max-width: calc(100% - 60px);
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .supply__footer__container .supply__footer__content .supply__footer__card.form .form__buttons .form__file-btn .form__file-btn__icon-file-success,
 .supply__footer__container .supply__footer__content .supply__footer__card.form .form__buttons .form__file-btn .form__file-btn__icon-file-close {
@@ -10167,6 +10171,11 @@ body:has(.modal-body.opened) {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+.modal-success .modal-success__button:hover {
+  color: #2764e0;
+  border-color: #2764e0;
 }
 
 @media screen and (max-width: 1439px) {
@@ -10288,6 +10297,9 @@ body:has(.modal-body.opened) {
   .supply__footer .supply__footer__container .supply__footer__content .supply__footer__card.form .form__buttons {
     flex-direction: column;
     gap: 16px;
+  }
+  .supply__footer .supply__footer__container .supply__footer__content .supply__footer__card.form .form__buttons .form__file-btn {
+    width: 100%;
   }
   .supply__footer .supply__footer__container .supply__footer__content .supply__footer__card.form .form__agreement {
     font-size: 12px;
